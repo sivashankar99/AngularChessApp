@@ -1,0 +1,34 @@
+.row{
+padding: none;
+margin: auto;
+/*margin-left: 10%;
+align-self: center;*/
+}
+
+.reference{
+    background-color:  black;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    size: 20px;
+    height: 30px;
+    padding-bottom: 15px;
+    width:100px;
+}
+.colReference{
+    background-color:  black;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    size: 20px;
+    height: 100px;
+    padding-bottom: 15px;
+    width:30px;
+}
+.spacer{
+    background-color:  black;
+    height: 30px;
+    width:30px;
+    border: 2px solid white;
+}
+ol {list-style-type: decimal;}

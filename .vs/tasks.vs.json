@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-getpiece.service",
+      "appliesTo": "src/app/getpiece.service.ts",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-getpiece.service",
+      "appliesTo": "src/app/getpiece.service.ts",
+      "type": "launch"
+    }
+  ]
+}

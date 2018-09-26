@@ -1,0 +1,91 @@
+<input id= "userInput" type="text" [(ngModel)]="sourceLoc" (blur)='setSource()' list="positions" placeholder="move piece at">
+<datalist id="positions">
+    <option *ngFor = 'let piece of pieces' [value]="piece.posId">
+</datalist>
+<button (click)='auxMove()'>to</button>
+<input id= "userInput" type="text" [(ngModel)]="targetLoc" list="positions" placeholder="here">
+<div class='row'>
+    <div class='col-md-10'>
+        <div class="row">
+            <div class="spacer" ></div>
+            <div *ngFor = 'let index of cols' class="reference" >
+                <p>{{index}}</p>
+            </div>
+            <div class="spacer" ></div>
+        </div> 
+        <div class="row">
+            <div class="colReference" >8</div>
+            <div *ngFor = 'let piece of pieces | slice:0:8'>
+            <ch-piece [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >8</div>
+        </div>
+        <div class="row"> 
+                <div class="colReference" >7</div>
+            <div *ngFor = 'let piece of pieces | slice:8:16'>
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>  
+            <div class="colReference" >7</div>
+        </div>
+        <div class="row"> 
+            <div class="colReference" >6</div>
+            <div *ngFor = 'let piece of pieces | slice:16:24' >
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >6</div>
+        </div>
+        <div class="row"> 
+            <div class="colReference" >5</div>
+            <div *ngFor = 'let piece of pieces | slice:24:32' >
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >5</div>
+        </div>
+        <div class="row">
+            <div class="colReference" >4</div>
+            <div *ngFor = 'let piece of pieces | slice:32:40' >
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >4</div>
+        </div>
+        <div class="row">
+            <div class="colReference" >3</div>
+            <div *ngFor = 'let piece of pieces | slice:40:48' >
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >3</div>
+        </div>
+        <div class="row"> 
+            <div class="colReference" >2</div>
+            <div *ngFor = 'let piece of pieces | slice:48:56' >
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >2</div>
+        </div>
+        <div class="row">
+            <div class="colReference" >1</div>
+            <div *ngFor = 'let piece of pieces | slice:56:64'>
+                <ch-piece  [mypiece]='piece' [turn]='turn' (clickEmitter)='onClick($event)'></ch-piece>
+            </div>
+            <div class="colReference" >1</div>
+        </div> 
+
+        <div class="row">
+            <div class="spacer" ></div>
+            <div *ngFor = 'let index of cols' class="reference" >
+                <p>{{index}}</p>
+            </div>
+            <div class="spacer" ></div>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <h3>Move List:</h3>
+        <ol *ngFor = 'let move of AllMoves'>
+            <li value='{{AllMoves.indexOf(move) + 1}}'>{{move}}</li>
+        </ol>
+    </div>
+</div>
+<br>
+<p>Team to play: <span style="color:green;font-size:x-large">{{turn}}</span></p>
+<button (click)='reset()'>Reset</button>

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+.white{
+	font-family: 'ChessMedium';
+    font-size:3em;
+	background-color:wheat;
+	color:black;}
+.black{
+	font-family: 'ChessMedium';
+	background-color:sandybrown;
+    font-size:3em;
+	}
+table {
+    width: 640px;
+    border: 1px solid black;
+    text-align:center;
+    background-color: red;
+
+}
+td {
+	border: 1px solid black;
+    height: 80px;
+}
+
+.WhiteGrid,.BlackGrid {
+    float: inherit; 
+    width: 100px; 
+    height: 100px;
+    padding-top: 3px;
+    border: 2px solid black;
+    /*text-align: center;
+    font-family: 'ChessMedium';
+    font-size:3em;*/
+
+}
+.WhiteGrid {background-color: wheat;}
+.BlackGrid {background-color: sandybrown;}
+.BlackGrid:hover{
+    background-color:cadetblue;
+}
+.WhiteGrid:hover{
+    background-color:cornflowerblue;
+}
+.flex-container {
+     clear: both;
+     overflow:hidden;
+}
+img {
+    width: 80px; 
+    height: 80px;
+}

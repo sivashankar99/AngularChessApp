@@ -1,0 +1,590 @@
+[
+    {
+        "id": 1,
+        "class": "droptarget",
+        "posId": "a8",
+        "pieceId": "br1",
+        "team": "Black",
+        "type": "Rook",
+        "posmoves": [],
+        "imageUrl": "../../assets/blackrook.png"
+    },
+    {
+        "id" : 2,
+        "class": "droptarget1",
+        "posId": "b8",
+        "pieceId": "bn1",
+        "team": "Black",
+        "type": "Knight",
+        "posmoves": ["a6", "c6"],
+        "imageUrl": "../../assets/blackknight.png"
+    },
+    {
+        "id" : 3,
+        "class": "droptarget",
+        "posId": "c8",
+        "pieceId": "bl1",
+        "team": "Black",
+        "type": "Bishop",
+        "posmoves": [],
+        "imageUrl": "../../assets/blackBishop.png"
+    },
+    {
+        "id" : 4,
+        "class": "droptarget1",
+        "posId": "d8",
+        "pieceId": "bq",
+        "team": "Black",
+        "type": "Queen",
+        "posmoves": [],
+        "imageUrl": "../../assets/blackqueen.png"
+    },
+    {
+        "id" : 5,
+        "class": "droptarget",
+        "posId": "e8",
+        "pieceId": "bk",
+        "team": "Black",
+        "type": "King",
+        "posmoves": [],
+        "imageUrl": "../../assets/blackking.png"
+    },
+    {
+        "id" : 6,
+        "class": "droptarget1",
+        "posId": "f8",
+        "pieceId": "bl2",
+        "team": "Black",
+        "type": "Bishop",
+        "posmoves": [],
+        "imageUrl": "../../assets/blackBishop.png"
+    },
+    {
+        "id" : 7,
+        "class": "droptarget",
+        "posId": "g8",
+        "pieceId": "bn2",
+        "team": "Black",
+        "type": "Knight",
+        "posmoves": ["h6", "f6"],
+        "imageUrl": "../../assets/blackknight.png"
+    },
+    {
+        "id" : 8,
+        "class": "droptarget1",
+        "posId": "h8",
+        "pieceId": "br2",
+        "team": "Black",
+        "type": "Rook",
+        "posmoves": [],
+        "imageUrl": "../../assets/blackrook.png"
+    },
+    {
+        "id" : 9,
+        "class": "droptarget1",
+        "posId": "a7",
+        "pieceId": "bpa",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["a6", "a5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 10,
+        "class": "droptarget",
+        "posId": "b7",
+        "pieceId": "bpb",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["b6", "b5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 11,
+        "class": "droptarget1",
+        "posId": "c7",
+        "pieceId": "bpc",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["c6", "c5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 12,
+        "class": "droptarget",
+        "posId": "d7",
+        "pieceId": "bpd",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["d6", "d5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 13, "class": "droptarget1",
+        "posId": "e7",
+        "pieceId": "bpe",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["e6", "e5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 14, "class": "droptarget",
+        "posId": "f7",
+        "pieceId": "bpf",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["f6", "f5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 15, "class": "droptarget1",
+        "posId": "g7",
+        "pieceId": "bpg",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["g6", "g5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 16, "class": "droptarget",
+        "posId": "h7",
+        "pieceId": "bph",
+        "team": "Black",
+        "type": "pawn",
+        "posmoves": ["h6", "h5"],
+        "imageUrl": "../../assets/blackpawn.png"
+    },
+    {
+        "id" : 17, "class": "droptarget",
+        "posId": "a6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 18, "class": "droptarget1",
+        "posId": "b6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 19, "class": "droptarget",
+        "posId": "c6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 20, "class": "droptarget1",
+        "posId": "d6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 21, "class": "droptarget",
+        "posId": "e6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 22, "class": "droptarget1",
+        "posId": "f6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 23, "class": "droptarget",
+        "posId": "g6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 24, "class": "droptarget1",
+        "posId": "h6",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 25, "class": "droptarget1",
+        "posId": "a5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 26, "class": "droptarget",
+        "posId": "b5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 27, "class": "droptarget1",
+        "posId": "c5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 28, "class": "droptarget",
+        "posId": "d5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 29, "class": "droptarget1",
+        "posId": "e5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 30, "class": "droptarget",
+        "posId": "f5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 31, "class": "droptarget1",
+        "posId": "g5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 32, "class": "droptarget",
+        "posId": "h5",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 33, "class": "droptarget",
+        "posId": "a4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 34, "class": "droptarget1",
+        "posId": "b4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 35, "class": "droptarget",
+        "posId": "c4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 36, "class": "droptarget1",
+        "posId": "d4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 37, "class": "droptarget",
+        "posId": "e4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 38, "class": "droptarget1",
+        "posId": "f4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 39, "class": "droptarget",
+        "posId": "g4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 40, "class": "droptarget1",
+        "posId": "h4",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 41, "class": "droptarget1",
+        "posId": "a3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 42, "class": "droptarget",
+        "posId": "b3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 43, "class": "droptarget1",
+        "posId": "c3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 44, "class": "droptarget",
+        "posId": "d3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 45, "class": "droptarget1",
+        "posId": "e3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 46, "class": "droptarget",
+        "posId": "f3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 47, "class": "droptarget1",
+        "posId": "g3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 48, "class": "droptarget",
+        "posId": "h3",
+        "pieceId": "",
+        "team": "",
+        "type": "",
+        "posmoves": [],
+        "imageUrl": ""
+    },
+    {
+        "id" : 49, "class": "droptarget",
+        "posId": "a2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["a3", "a4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 50, "class": "droptarget1",
+        "posId": "b2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["b3", "b4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 51, "class": "droptarget",
+        "posId": "c2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["c3", "c4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 52, "class": "droptarget1",
+        "posId": "d2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["d3", "d4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 53, "class": "droptarget",
+        "posId": "e2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["e3", "e4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 54, "class": "droptarget1",
+        "posId": "f2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["f3", "f4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 55, "class": "droptarget",
+        "posId": "g2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["g3", "g4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 56, "class": "droptarget1",
+        "posId": "h2",
+        "pieceId": "",
+        "team": "White",
+        "type": "pawn",
+        "posmoves": ["h3", "h4"],
+        "imageUrl": "../../assets/whitepawn.png"
+    },
+    {
+        "id" : 57, "class": "droptarget1",
+        "posId": "a1",
+        "pieceId": "wr1",
+        "team": "White",
+        "type": "Rook",
+        "posmoves": [],
+        "imageUrl": "../../assets/whiterook.png"
+    },
+    {
+        "id" : 58, "class": "droptarget",
+        "posId": "b1",
+        "pieceId": "wn1",
+        "team": "White",
+        "type": "Knight",
+        "posmoves": ["a3", "c3"],
+        "imageUrl": "../../assets/whiteknight.png"
+    },
+    {
+        "id" : 59, "class": "droptarget1",
+        "posId": "c1",
+        "pieceId": "wl1",
+        "team": "White",
+        "type": "Bishop",
+        "posmoves": [],
+        "imageUrl": "../../assets/whiteBishop.png"
+    },
+    {
+        "id" : 60, "class": "droptarget",
+        "posId": "d1",
+        "pieceId": "wq",
+        "team": "White",
+        "type": "Queen",
+        "posmoves": [],
+        "imageUrl": "../../assets/whitequeen.png"
+    },
+    {
+        "id" : 61, "class": "droptarget1",
+        "posId": "e1",
+        "pieceId": "wk",
+        "team": "White",
+        "type": "King",
+        "posmoves": [],
+        "imageUrl": "../../assets/whiteking.png"
+    },
+    {
+        "id" : 62, "class": "droptarget",
+        "posId": "f1",
+        "pieceId": "wl2",
+        "team": "White",
+        "type": "Bishop",
+        "posmoves": [],
+        "imageUrl": "../../assets/whiteBishop.png"
+    },
+    {
+        "id" : 63, "class": "droptarget1",
+        "posId": "g1",
+        "pieceId": "wn2",
+        "team": "White",
+        "type": "Knight",
+        "posmoves": ["f3", "h3"],
+        "imageUrl": "../../assets/whiteknight.png"
+    },
+    {
+        "id" : 64, "class": "droptarget",
+        "posId": "h1",
+        "pieceId": "wr2",
+        "team": "White",
+        "type": "Rook",
+        "posmoves": [],
+        "imageUrl": "../../assets/whiterook.png"
+    }
+]

@@ -1,0 +1,264 @@
+
+<div class="flex-container" *ngFor = 'let piece of pieces'>
+  <div class= [id]="piece.posId">
+  <img class='imageb' src= id="br1">
+  </div>
+  
+ 
+  </div>
+  
+  <div class="flex-container" >
+  <div class="droptarget1"  id='a7'>
+      <img class='imageb' src="..\assets\blackpawn.png" id="apb">
+  </div>
+  
+  <div class="droptarget"  id='b7'>
+      <img class='imageb' src="..\assets\blackpawn.png" id="bpb">
+  </div>
+  <div class="droptarget1"  id='c7'>
+      <img class='imageb' src="..\assets\blackpawn.png" id="cpb">
+  </div>
+  
+  <div class="droptarget"  id='d7'>
+      <img class='imageb' src="..\assets\blackpawn.png" id="dpb">
+  </div>
+  <div class="droptarget1"  id='e7'>
+      <img class='imageb' src="..\assets\blackpawn.png" id="epb">
+  </div>
+  
+  <div class="droptarget"  id="f7">
+      <img class='imageb' src="..\assets\blackpawn.png" id="fpb">
+  </div>
+  <div class="droptarget1"  id="g7">
+      <img class='imageb' src="..\assets\blackpawn.png" id="gpb">
+  </div>
+  <div class="droptarget"  id="h7">
+      <img class='imageb' src="..\assets\blackpawn.png" id="hpb">
+  </div>
+  </div>
+  <div class="flex-container" >
+  <div class="droptarget"  id="a6">
+  </div>
+  
+  <div class="droptarget1"  id="b6">
+  </div>
+  <div class="droptarget"  id="c6">
+  </div>
+  
+  <div class="droptarget1"  id="d6">
+  </div>
+  <div class="droptarget"  id="e6">
+  </div>
+  
+  <div class="droptarget1"  id="f6">
+  </div>
+  <div class="droptarget"  id="g6">
+  </div>
+  
+  <div class="droptarget1"  id="h6">
+  </div>
+  
+  </div>
+  <div class="flex-container" >
+  <div class="droptarget1"  id="a5">
+  </div>
+  
+  <div class="droptarget"  id="b5">
+  </div>
+  <div class="droptarget1"  id="c5">
+  </div>
+  
+  <div class="droptarget"  id="d5">
+  </div>
+  <div class="droptarget1"  id="e5">
+  </div>
+  
+  <div class="droptarget"  id="f5">
+  </div>
+  <div class="droptarget1"  id="g5">
+  </div>
+  
+  <div class="droptarget"  id="h5">
+  </div>
+  </div>
+  <div class="flex-container" >
+  <div class="droptarget"  id="a4">
+  </div>
+  
+  <div class="droptarget1"  id="b4">
+  </div>
+  <div class="droptarget"  id="c4">
+  </div>
+  
+  <div class="droptarget1"  id="d4">
+  </div>
+  <div class="droptarget"  id="e4">
+  </div>
+  
+  <div class="droptarget1"  id="f4">
+  </div>
+  <div class="droptarget"  id="g4">
+  </div>
+  
+  <div class="droptarget1"  id="h4">
+  </div>
+  </div>
+  <div class="flex-container" >
+  <div class="droptarget1"  id="a3">
+  </div>
+  
+  <div class="droptarget"  id="b3">
+  </div>
+  <div class="droptarget1"  id="c3">
+  </div>
+  
+  <div class="droptarget"  id="d3">
+  </div>
+  <div class="droptarget1"  id="e3">
+  </div>
+  
+  <div class="droptarget"  id="f3">
+  </div>
+  <div class="droptarget1"  id="g3">
+  </div>
+  <div class="droptarget"  id="h3">
+  </div>
+  </div>
+  <div class="flex-container" >
+  <div class="droptarget"  id="a2">
+  <img class='imagew' src="..\assets\whitepawn.png" id="wpa">
+  </div>
+  
+  <div class="droptarget1"  id="b2">
+      <img class='imagew' src="..\assets\whitepawn.png" id="wpb">
+  </div>
+  <div class="droptarget"  id="c2">
+      <img class='imagew' src="..\assets\whitepawn.png" id="wpc">
+  </div>
+  
+  <div class="droptarget1"  id="d2">
+      <img class='imagew' src="..\assets\whitepawn.png" id="wpd">
+  </div>
+  <div class="droptarget"  id="e2">
+      <img class='imagew' src="..\assets\whitepawn.png" id="wpe">
+  </div>
+  
+  <div class="droptarget1"  id="f2">
+      <img class='imagew' src="..\assets\whitepawn.png" id="wpf">
+  </div>
+  <div class="droptarget"  id="g2">
+      <img class='imagew' src="..\assets\whitepawn.png" id="wpg">
+  </div>
+  
+  <div class="droptarget1"  id="h2">
+  <img class='imagew' src="..\assets\whitepawn.png" id="wph">
+  </div>
+  </div>
+  <div class="flex-container" >
+  <div class="droptarget1"  id="a1">
+  <img class='imagew' src="..\assets\whiterook.png" id="wr1">
+  </div>
+  
+  <div class="droptarget"  id="b1">
+      <img class='imagew' src="..\assets\whiteknight.png" id="wn1">
+  </div>
+  <div class="droptarget1"  id="c1">
+      <img class='imagew' src="..\assets\whiteBishop.png" id="wl1">
+  </div>
+  
+  <div class="droptarget"  id="d1">
+      <img class='imagew' src="..\assets\whitequeen.png" id="wq">
+  </div>
+  <div class="droptarget1"  id="e1">
+      <img class='imagew' src="..\assets\whiteking.png" id="wk">
+  </div>
+  
+  <div class="droptarget"  id="f1">
+      <img class='imagew' src="..\assets\whiteBishop.png" id="wl2">
+  </div>
+  <div class="droptarget1"  id="g1">
+      <img class='imagew' src="..\assets\whiteknight.png" id="wn2">
+  </div>
+  
+  <div class="droptarget"  id="h1" >
+  <img class='imagew' src="..\assets\whiterook.png" id="wr2">
+  </div>
+  </div>
+  
+
+
+
+[
+    {
+        "class":"droptarget",
+        "posId":"a8",
+        "pieceId":"br1",
+        "team":"Black",
+        "type":"Rook",
+        "posmoves":["a7","a6","a5"],
+        "imageUrl":"../assets/blackrook.png"
+    }, 
+    {
+        "class":"droptarget1",
+        "posId":"b8",
+        "pieceId":"bn1",
+        "team":"Black",
+        "type":"Knight",
+        "posmoves":[],
+        "imageUrl":"../assets/blackknight.png"
+    },
+    {
+        "class":"droptarget",
+        "posId":"c8",
+        "pieceId":"bl1",
+        "team":"Black",
+        "type":"Bishop",
+        "posmoves":[],
+        "imageUrl":"../assets/blackBishop.png"
+    },
+    {
+        "class":"droptarget1",
+        "posId":"d8",
+        "pieceId":"bq",
+        "team":"Black",
+        "type":"Queen",
+        "posmoves":[],
+        "imageUrl":"../assets/blackqueen.png"
+    },
+    {
+        "class":"droptarget",
+        "posId":"e8",
+        "pieceId":"bk",
+        "team":"Black",
+        "type":"King",
+        "posmoves":[],
+        "imageUrl":"../assets/blackking.png"
+    },
+    {
+        "class":"droptarget1",
+        "posId":"f8",
+        "pieceId":"bl2",
+        "team":"Black",
+        "type":"Bishop",
+        "posmoves":[],
+        "imageUrl":"../assets/blackBishop.png"
+    },
+    {
+        "class":"droptarget",
+        "posId":"g8",
+        "pieceId":"bn2",
+        "team":"Black",
+        "type":"Knight",
+        "posmoves":[],
+        "imageUrl":"../assets/blackknight.png"
+    },
+    {
+        "class":"droptarget1",
+        "posId":"h8",
+        "pieceId":"br2",
+        "team":"Black",
+        "type":"Rook",
+        "posmoves":[],
+        "imageUrl":"../assets/blackrook.png"
+    }
+]

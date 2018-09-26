@@ -1,0 +1,11 @@
+[
+    {
+    "class":"droptarget",
+    "posId":"b1",
+    "pieceId":"wn1",
+    "team":"White",
+    "type":"Knight",
+    "posmoves":["a3","c3"],
+    "imageUrl":"../assets/whiteknight.png"
+    }
+]
