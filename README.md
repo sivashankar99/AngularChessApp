@@ -1,5 +1,9 @@
-# ChessWithAngular
+# AngularChessApp
+All the dependent packages has to be installed first before u run the app
+Run `npm install` to install all the dependent packages
 
+
+#Angular CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
 
 ## Development server
