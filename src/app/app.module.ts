@@ -7,6 +7,7 @@ import { PieceComponent } from './pieces/piece.component';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { RulesComponent } from './rules/rules.component';
 
 
 
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
    BoardComponent,
-   PieceComponent
+   PieceComponent,
+   RulesComponent
   ],
   imports: [
     BrowserModule,
