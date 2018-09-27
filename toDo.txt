@@ -1,0 +1,5 @@
+Created a chess board
+
+Added functionality to move pieces as per standard chess rules.
+
+To DO: i) Add capture functionality ii) Add AI player iii)Add Reinforcement learning to the AI player Gameplay
