@@ -115,30 +115,27 @@ export class BoardComponent implements OnInit {
     const row = changedloc[1];
     // tslint:disable-next-line:prefer-const
     let posmoves: string[];
-    const rules = new RulesComponent();
+    const rules = new RulesComponent(changedloc);
     switch (givenpiecetype) {
       case 'Rook':
-      posmoves = rules.generate_for_rook(row, col, changedloc);
+      posmoves = rules.generate_for_rook();
         break;
       case 'Knight':
-        posmoves = rules.generate_for_knight(row, col);
+        posmoves = rules.generate_for_knight();
       break;
       case 'Bishop':
-      posmoves = rules.generate_for_bishop(row, col) ;
+      posmoves = rules.generate_for_bishop() ;
       break;
       case 'Queen':
-      const posmoves1 = rules.generate_for_rook(row, col, changedloc);
-      const posmoves2 = rules.generate_for_bishop(row, col);
+      const posmoves1 = rules.generate_for_rook();
+      const posmoves2 = rules.generate_for_bishop();
       posmoves = posmoves1.concat(posmoves2);
       break;
       case 'King':
+      posmoves = rules.generate_for_king(givenpieceteam);
       break;
       case 'pawn':
-      if (givenpieceteam === 'White') {
-        posmoves = [col.concat(this.rows[this.rows.indexOf(row) + 1] )];
-      } else if ( givenpieceteam === 'Black' ) {
-        posmoves = [col.concat(this.rows[this.rows.indexOf(row) - 1] )];
-      }
+      posmoves = rules.generate_for_pawn(givenpieceteam );
       break;
       }
       console.log('updated posmoves are: ', posmoves);
@@ -167,38 +164,35 @@ export class BoardComponent implements OnInit {
     const targetElement = document.getElementById(finalpos);
     // this.piecemoveService.updateBoard(finalpos).subscribe(data => console.log(data),  error => this.errorMessage = <any>error);
     console.log('Target is :' + finalpos + ' and has ' + targetElement.childNodes.length + ' children');
-    if (posMoves.includes(finalpos) && sourceElementChild !== null && targetElement.childNodes.length === 1 ) {
-    console.log('Moving piece to :' + finalpos);
-    this.AllMoves.push(initialpos + ' to ' + finalpos );
-    this.updatePieceinServer(initialpos, finalpos);
-    const targetElementChild = sourceElementChild.cloneNode(true);
-    // document.getElementById(finalpos).addEventListener( 'click', MouseEvent.prototype.preventDefault ,false);
-    document.getElementById(finalpos).appendChild(targetElementChild);
-    // targetElement.textContent = '';
-    document.getElementById(initialpos).textContent = ' ';
-    this.toggleTurn();
-    this.toastrserv.success('Moved');
-  } else if (posMoves.includes(finalpos) && sourceElementChild !== null && targetElement.childNodes.length !== 1) {
-    let friend: boolean;
-    let myteam: string , otherteam: string;
-    // console.log(myteam);
-    // const otherteam = this.getMethisPiece(finalpos) ;
-    myteam = this.pieces[this.toID(initialpos) - 1].team ;
-    otherteam = this.pieces[this.toID(finalpos) - 1].team ;
-    // console.log('there is a piece already present at ' + finalpos + '.The given piece cannot be moved');
-    friend = myteam === otherteam ;
-    console.log(myteam , otherteam, friend);
-    if (!friend) { this.AllMoves.push(initialpos + ' to ' + finalpos );
-    this.updatePieceinServer(initialpos, finalpos);
-    const targetElementChild = sourceElementChild.cloneNode(true);
-    document.getElementById(finalpos).textContent = '';
-    document.getElementById(finalpos).appendChild(targetElementChild);
-    // targetElement.textContent = '';
-    document.getElementById(initialpos).textContent = ' '; }
-    console.log( this.pieces[this.toID(initialpos) - 1].team + otherteam + ' ' + myteam + this.toID(finalpos)  + ' ' + friend);
-    this.toggleTurn();
-    this.toastrserv.success('Captured');
-  } else {
+    if (posMoves.includes(finalpos) && sourceElementChild !== null) {
+      if (targetElement.childNodes.length === 1 ) { // move to a free square
+      console.log('Moving piece to :' + finalpos);
+      this.AllMoves.push(initialpos + ' to ' + finalpos );
+      this.updatePieceinServer(initialpos, finalpos);
+      const targetElementChild = sourceElementChild.cloneNode(true);
+      // document.getElementById(finalpos).addEventListener( 'click', MouseEvent.prototype.preventDefault ,false);
+      document.getElementById(finalpos).appendChild(targetElementChild);
+      // targetElement.textContent = '';
+      document.getElementById(initialpos).textContent = ' ';
+      this.toggleTurn();
+      this.toastrserv.success('Moved');
+      } else if (targetElement.childNodes.length === 2) { // capture or block scenario
+       const friend = false;
+       console.log( friend);
+       if (!friend) { // capture scenario
+         this.AllMoves.push(initialpos + ' to ' + finalpos );
+         this.updatePieceinServer(initialpos, finalpos);
+         const targetElementChild = sourceElementChild.cloneNode(true);
+         targetElement.textContent = '';
+         document.getElementById(finalpos).appendChild(targetElementChild);
+         document.getElementById(initialpos).textContent = ' ';
+         this.toggleTurn();
+         this.toastrserv.success('Succesfully Captured ' + this.piece2.team + '\'s ' + this.piece2.type);
+      } else {
+        this.toastrserv.warning('cant"t capture own team pieces');
+        }
+      }
+    } else {
     console.log('The given piece cannot be moved to ' + finalpos + '. The possible Moves are ' + posMoves );
     this.toastrserv.warning('Can"t move there');
   }
